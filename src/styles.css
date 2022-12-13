@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary: #FFF;
+  --secondary: #000066;
+  --main-element: #0000FF;
+  --highlight: #00A0F3;
+  --font: #000000;
+}
+
+/*BEGIN Themes*/
+
+.theme-light {
+  --primary: #FFF;
+  --secondary: #000066;
+  --main-element: #0000FF;
+  --highlight: #00A0F3;
+  --font: #000;
+}
+
+.theme-dark {
+  --primary: #212329;
+  --secondary: #000;
+  --main-element: #00A0F3;
+  --highlight: #00A0F3;
+  --font: #000;
+}
+
+/*END Themes*/

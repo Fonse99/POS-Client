@@ -1,0 +1,13 @@
+<p>navigation works!</p>
+<nav class="nav-bar">
+  <ul class="nav-items">
+    <li
+      [routerLink]="[item.route]"
+      routerLinkActive="active"
+      *ngFor="let item of items"
+      class="item"
+    >
+      <img src="../../../favicon.ico" />
+    </li>
+  </ul>
+</nav>
