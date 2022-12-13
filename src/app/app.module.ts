@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InventoryComponent } from './components/inventory/inventory.component';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { InventoryComponent } from './components/inventory/inventory.component';
     InventoryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule],
-  providers: [],
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
