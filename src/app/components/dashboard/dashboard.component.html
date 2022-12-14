@@ -1,1 +1,67 @@
-<p>dashboard works!</p>
+<div class="container">
+  <h1>¡Buenas tardes, Brandon!</h1>
+
+  <ul>
+    <li>
+      <p>Venta</p>
+      <p>{{ 4500 | currency : "C$" }}</p>
+    </li>
+    <li>
+      <p>Venta</p>
+      <p>{{ 4500 | currency : "C$" }}</p>
+    </li>
+    <li>
+      <p>Venta</p>
+      <p>{{ 4500 | currency : "C$" }}</p>
+    </li>
+  </ul>
+
+  <div class="d-body">
+    <div class="d-body-child">
+      <img
+        class="concept-small"
+        src="../../../assets/concepts/Vectorial-celebrating.jpg"
+        alt="Best"
+      />
+      <p>Venta Mayor</p>
+      <p>{{ 4500 | currency : "C$" }}</p>
+
+      <p>¡Lo estás haciendo genial!</p>
+    </div>
+    <div class="d-body-child mid-w-size">
+      <div class="recents">
+        <p class="title">Ventas recientes</p>
+        <div class="scroll">
+          <div class="child-item center-h-auto">
+            <cmp-field-and-value
+              field="Factura No."
+              value="fc-12345"
+            ></cmp-field-and-value>
+            <cmp-field-and-value
+              field="Fecha y hora"
+              value="18/12/200"
+            ></cmp-field-and-value>
+            <cmp-field-and-value
+              field="Total"
+              value="4 500"
+            ></cmp-field-and-value>
+          </div>
+          <div class="child-item center-h-auto">
+            <cmp-field-and-value
+              field="Fecha y hora"
+              value="18/12/200"
+            ></cmp-field-and-value>
+            <cmp-field-and-value
+              field="Factura No."
+              value="fc-12345"
+            ></cmp-field-and-value>
+            <cmp-field-and-value
+              field="Total"
+              value="4 500"
+            ></cmp-field-and-value>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

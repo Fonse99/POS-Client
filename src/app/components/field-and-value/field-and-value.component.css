@@ -1,0 +1,17 @@
+p {
+    text-align: left;
+    margin: 0px;
+}
+
+.main {
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.black-font {
+    color: var(--font);
+}
+
+.white-font {
+    color: var(--primary);
+}

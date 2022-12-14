@@ -6,6 +6,10 @@
   --font: #000000;
 }
 
+
+/*BEGIN sizing*/
+/*END sizing*/
+
 /*BEGIN Themes*/
 
 .theme-light {
@@ -25,3 +29,26 @@
 }
 
 /*END Themes*/
+
+.title {
+  font-size: larger;
+  font-weight: bolder;
+  border-bottom: solid 1px;
+  text-align: left;
+}
+
+.f-w-center {
+  justify-content: center;
+}
+
+.center-h-auto {
+  margin-inline: auto;
+}
+
+.center-v-auto {
+  margin-block: auto;
+}
+
+body {
+  margin: 0px;
+}

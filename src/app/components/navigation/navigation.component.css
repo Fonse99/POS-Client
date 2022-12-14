@@ -1,0 +1,35 @@
+.nav-bar {
+    margin: 0px;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 50px;
+    background-color: var(--secondary);
+}
+
+.nav-items {
+    padding: 0px;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.item {
+    margin-block: 5px;
+}
+
+li {
+    margin-inline: auto;
+    text-align: center;
+}
+
+li>img {
+    width: 30px;
+    height: 30px;
+}

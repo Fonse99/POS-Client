@@ -1,0 +1,50 @@
+.container {
+    margin: auto;
+    height: 700px;
+    width: 80%;
+    text-align: center;
+}
+
+.concept-small {
+    height: 100px;
+    border-radius: 10px;
+}
+
+.d-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.d-body-child {
+    width: 300px;
+    height: 400px;
+}
+
+.child-item {
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 60px;
+    width: 90%;
+    margin-top: 19px;
+    border-radius: 9px;
+    background-color: var(--highlight);
+}
+
+.mid-w-size {
+    width: 40%;
+}
+
+.scroll {
+    overflow-y: scroll;
+    height: 300px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: solid 1px darkgray;
+    font-weight: bolder;
+    margin-top: 100px;
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'cmp-navigation',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.css'],
 })
 export class NavigationComponent {
-  items: BreadCrumb[] = [
+  @Input() items: BreadCrumb[] = [
     {
       name: 'default',
       icon: '../../../favicon.ico',
@@ -16,7 +16,7 @@ export class NavigationComponent {
   constructor() {}
 }
 
-interface BreadCrumb {
+export interface BreadCrumb {
   name: string;
   icon: string;
   route: string;
