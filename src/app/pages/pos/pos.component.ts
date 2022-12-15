@@ -1,15 +1,22 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { PosService } from './pos.service';
 
 @Component({
   selector: 'pg-pos',
   templateUrl: './pos.component.html',
-  styleUrls: ['./pos.component.css']
+  styleUrls: ['./pos.component.css'],
 })
-export class PosComponent implements OnInit {
+export class PosComponent {
+  table_content: any[] = [];
 
-  constructor() { }
+  constructor(private posService: PosService) {}
 
-  ngOnInit(): void {
+  findProduct() {
+    return (code: string) => {
+      this.posService.findProductByBarcode(code).subscribe((x) => {
+        console.log(x);
+        this.table_content.push(x);
+      });
+    };
   }
-
 }

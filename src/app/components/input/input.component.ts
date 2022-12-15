@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, ElementRef, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'cmp-input',
@@ -8,4 +8,12 @@ import { Component, Input, OnInit } from '@angular/core';
 export class InputComponent {
   @Input() type: string = 'text';
   @Input() placeholder: string = 'example...';
+  @Input() keyPressHandler = (_: any) => {};
+
+  onKeyPress(event: KeyboardEvent) {
+    let target = event.target as HTMLInputElement;
+    if (event.key.toUpperCase() === 'ENTER') {
+      this.keyPressHandler(target.value);
+    }
+  }
 }

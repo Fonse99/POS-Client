@@ -1,1 +1,6 @@
-<input [type]="type" [placeholder]="placeholder" />
+<input
+  class="default"
+  [type]="type"
+  [placeholder]="placeholder"
+  (keypress)="onKeyPress($event)"
+/>

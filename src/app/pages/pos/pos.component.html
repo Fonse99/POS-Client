@@ -4,6 +4,7 @@
       class="default"
       placeholder="ej: 234567890..."
       variant="default"
+      [keyPressHandler]="findProduct()"
     ></cmp-input>
 
     <div class="content">
@@ -11,13 +12,25 @@
         <ul class="table-header">
           <li>
             <input class="selection" type="checkbox" />
-            Element
+            Nombre
           </li>
-          <li>Element</li>
-          <li>Element</li>
-          <li>Element</li>
-          <li>Element</li>
-          <li>Element</li>
+          <li>Código</li>
+          <li>Cantidad</li>
+          <li>Precio</li>
+          <li>Total</li>
+        </ul>
+
+        <ul class="table-content">
+          <li class="table-item" *ngFor="let content of table_content">
+            <span>
+              <input class="Selection" type="checkbox" />
+              <p>{{content.name}}</p>
+            </span>
+            <p>{{content.barcode}}</p>
+            <input type="number" />
+            <p>{{content.detail.price}}</p>
+            <p>{{content}}</p>
+          </li>
         </ul>
       </div>
 
