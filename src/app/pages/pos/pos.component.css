@@ -1,0 +1,68 @@
+.container {
+    height: 600px;
+}
+
+.content {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.body {
+    margin-inline: auto;
+    width: 1100px;
+    margin-top: 70px;
+}
+
+.invoice {
+    height: 500px;
+    width: 800px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+}
+
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 0px;
+}
+
+.table-header>li {
+    font-weight: bolder;
+}
+
+.selection {
+    margin-inline: 10px;
+}
+
+.ticket {
+    height: 500px;
+    width: 250px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.ticket>p {
+    height: 45px;
+    border-bottom: 1px solid;
+    text-align: center;
+    font-weight: 600;
+}
+
+.controls {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.amount {
+    height: 100px;
+}

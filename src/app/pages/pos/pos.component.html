@@ -1,1 +1,42 @@
-<p>pos works!</p>
+<div class="containenr">
+  <div class="body">
+    <cmp-input
+      class="default"
+      placeholder="ej: 234567890..."
+      variant="default"
+    ></cmp-input>
+
+    <div class="content">
+      <div class="invoice">
+        <ul class="table-header">
+          <li>
+            <input class="selection" type="checkbox" />
+            Element
+          </li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+          <li>Element</li>
+        </ul>
+      </div>
+
+      <div class="ticket">
+        <p>Ticket</p>
+        <div class="sumary">
+          <p>Brandon Fonseca</p>
+          <p>Subtotal {{ 450 | currency : "C$" }}</p>
+          <p>Descuento {{ 0.1 | percent }}</p>
+        </div>
+        <div class="amount">
+          <p>Total</p>
+          <p>{{ 405 | currency : "C$" }}</p>
+        </div>
+        <div class="controls">
+          <button>Facturar</button>
+          <button>Descartar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
